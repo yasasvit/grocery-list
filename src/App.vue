@@ -4,12 +4,12 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import { components } from "aws-amplify-vue";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    ...components
   }
 }
 </script>
@@ -23,4 +23,13 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
+#nav {
+  padding: 30px;
+}
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
 </style>
